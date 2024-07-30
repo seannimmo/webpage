@@ -46,6 +46,7 @@ function navigateResume(page){
     document.getElementById(page).firstChild.style.color = colors[page]; 
 
     const container = document.querySelector(".resume");
+    console.log(container)
     fetch("page/" + page + ".html")
         .then(response => response.text())
         .then(html => {
